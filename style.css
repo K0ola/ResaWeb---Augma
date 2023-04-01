@@ -1,19 +1,161 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/* Police de texte : Italiana */
+/* font-family: 'Italiana', serif; */
+
+@media(max-width: 2200px){
+    body{
+        background-color: rgb(13, 12, 14);
+    }
+
+    .text-header{
+        margin: auto;
+        margin-bottom: 5px;
+        width: fit-content;
+        color: rgb(199, 200, 211);
+        font-family: 'Italiana', serif;
+        font-size: 2.5em;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    #left{
+        position: absolute;
+        top: 1%;
+        left: 40%;
+    }
+
+    #right{
+        position: absolute;
+        top: 1%;
+        right: 40%;
+    }
+
+    #text-intro-explicatif{
+        text-align: center;
+        color: rgb(199, 200, 211);
+        font-family: 'Labrada', serif;
+    }
+
+    #line {
+        position: sticky;
+        margin: auto;
+        width: 80%;
+        height: 1px;
+        background-color: white;
+    }
+
+    .nav{
+        position: relative;
+        margin-left: 13%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        grid-auto-rows: minmax(10px, auto);
+    }
+
+    .bouton-nav {
+        width: 150px;
+        height: fit-content;
+        border-radius: 21px;
+        text-align: center;
+    }
+
+    .slide-top {
+        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @keyframes slide-top {
+        0% {
+          transform: translateY(-100px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+    }
+
+    .slide-right {
+        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    @keyframes slide-right {
+        0% {
+          transform: translateX(-100px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+
+    .slide-out-left {
+        animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+    @keyframes slide-out-left {
+        0% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(-1000px);
+          opacity: 0;
+        }
+      }
 
 
-body{
-    background-color: rgb(13, 12, 14);
+
+    .bouton-nav:hover {
+        cursor: pointer;
+    }
+
+    .underline-bouton-nav img{
+        margin-left: -40px;
+        margin-top: -400px;
+        width: 150px;
+    }
+
+
+
+
+    .bouton-nav p{
+        
+        font-family: 'Italiana', serif;
+        color: rgb(199, 200, 211);
+        font-size: 1.5em;
+    }
+
+
+    @media(max-width: 1162px){
+        .nav{
+            width: 768px;
+            position: sticky;
+            display: block;
+            
+        }
+        #propos {
+            margin-right: 0px;
+        }
+        #contact{
+            margin-left: 0px;
+        }
+
+        .bouton-nav {
+            margin-top: 1px;
+            width: fit-content;
+            height: 60px;
+            border-radius: 21px;
+            text-align: left;
+        }
+
+    }
+
 }
 
-.text-header{
-    text-align: center;
-    color: rgb(199, 200, 211);
-    font-family: 'Labrada', serif;
-}
-
-#text-intro-explicatif{
-    text-align: center;
-    color: rgb(199, 200, 211);
-    font-family: 'Labrada', serif;
-}

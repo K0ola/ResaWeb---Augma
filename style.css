@@ -6,12 +6,12 @@
 
 @font-face {
 	font-family: 'Niagato';
-	src: url('/fonts/Niagato.ttf') format('truetype')
+	src: url('fonts/Niagato.ttf') format('truetype')
 }
 
 @font-face {
 	font-family: 'mangati';
-	src: url('/fonts/mangati.ttf') format('truetype')
+	src: url('fonts/mangati.ttf') format('truetype')
 }
 
 @font-face {

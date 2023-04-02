@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'Niagato';
+	src: url('/fonts/Niagato.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'mangati';
+	src: url('/fonts/mangati.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'CatCafe';
+	src: url('/fonts/CatCafe.ttf') format('truetype')
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
@@ -20,6 +36,10 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
+}
+
+p, a, h2, h3{
+    font-family: 'CatCafe';
 }
 
 @media(min-width: 100px){
@@ -42,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 
     .alert-code-promo{
         position: absolute;
-        left: 42%;
+        left: 43%;
         top: 460px;
         display: none;
     }
@@ -66,7 +86,7 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 5px;
         width: fit-content;
         color: rgb(199, 200, 211);
-        font-family: 'Italiana', serif;
+        font-family: 'mangati';
         font-size: 2.5em;
     }
 
@@ -89,7 +109,7 @@ body::-webkit-scrollbar-thumb {
     #text-intro-explicatif{
         text-align: center;
         color: rgb(199, 200, 211);
-        font-family: 'Labrada', serif;
+        font-family: 'CatCafe';
     }
 
     #line {
@@ -131,7 +151,7 @@ body::-webkit-scrollbar-thumb {
 
     .bouton-nav a{
         margin-top: 5px;
-        font-family: 'Italiana', serif;
+        font-family: 'CatCafe';
         color: rgb(199, 200, 211);
         font-size: 1.7em;
         text-decoration: none;
@@ -145,9 +165,12 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         color: azure;
     }
-
+    .titre-texte-explicatif{
+        font-family: 'CatCafe';
+    }
     .text-explicatif{
         line-height: 30px;
+        font-family: 'CatCafe';
     }
 
     .promotions-bloc{
@@ -173,7 +196,7 @@ body::-webkit-scrollbar-thumb {
         margin-right: 10px;
         margin-top: -15px;
         font-size: 1.9em;
-        font-family: 'Italiana', serif;
+        font-family: 'CatCafe';
     }
     #grande-line{
         width: 100%;
@@ -238,7 +261,7 @@ body::-webkit-scrollbar-thumb {
         margin-right: 10px;
         margin-top: -13px;
         font-size: 1.5em;
-        font-family: 'Italiana', serif;
+        font-family: 'CatCafe';
     }
     .grande-line-descriptif{
         background-color: aliceblue;
@@ -363,40 +386,45 @@ body::-webkit-scrollbar-thumb {
             position: absolute;
             top: 2900px;
         }
-        @media(max-width: 1162px){
-            .nav{
-                width: 700px;
-                position: sticky;
-                display: grid;
-                margin-left: 6%;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 10px;
-                grid-auto-rows: minmax(10px, auto);
+        @media(max-width: 1370px){
+            .alert-code-promo, .alert-code-promo img, .alert-code-promo p, .chapi{
+                display: none;
+            }
+            @media(max-width: 1162px){
+                .nav{
+                    width: 700px;
+                    position: sticky;
+                    display: grid;
+                    margin-left: 6%;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 10px;
+                    grid-auto-rows: minmax(10px, auto);
             
-            }
-            #propos {
-                margin-right: 0px;
-            }
-            #contact{
-                margin-left: 0px;
-            }
+                }
+                #propos {
+                    margin-right: 0px;
+                }
+                #contact{
+                    margin-left: 0px;
+                }
 
-            .bouton-nav {
-                margin-top: 5px;
-                width: fit-content;
-                height: 60px;
-                border-radius: 21px;
-                text-align: left;
-            }
+                .bouton-nav {
+                    margin-top: 5px;
+                    width: fit-content;
+                    height: 60px;
+                    border-radius: 21px;
+                    text-align: left;
+                }
 
-            .promotions-bloc{
-                width: 98%;
-                position: absolute;
-                top: 600px;
-            }
+                .promotions-bloc{
+                    width: 98%;
+                    position: absolute;
+                    top: 600px;
+                }
 
-            #grande-line{
-                width: 60%;
+                #grande-line{
+                    width: 60%;
+                }
             }
         }
     }

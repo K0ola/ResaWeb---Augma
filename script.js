@@ -88,3 +88,13 @@ news_hover.addEventListener(
 
     }
 )
+
+
+const chapi = document.getElementById('chapi');
+const promo_zone = document.getElementById('code-promo-zone');
+chapi.addEventListener(
+  "click",
+  (event) => {
+    promo_zone.style.display = "block"
+  }
+)

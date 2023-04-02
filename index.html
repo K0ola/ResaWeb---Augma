@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon_augma-ConvertImage.ico" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider-index.css">
+    <link rel="stylesheet" href="generation.css">
+    <script src="generate.js"></script>
     <title>Augma | Accueil</title>
 </head>
 <body>
+    <div class="chapi" id="chapi">
+        <img src="images/mini_chapi.svg">
+    </div>
     <header>
         <div id="top">
             <img src="images/logo-Augma.png" width="70px" id="left">
-            <h1 class="text-header" id="title">Augma</h1>
+            <h1 class="text-header bounce-in-top" id="title"></h1>
             <img src="images/logo-Augma.png" width="70px" id="right">
         </div>
         <div id="line">
@@ -39,8 +43,12 @@
     </div>
 
     <div class="texte-intro">
-        <h2 class="titre-texte-explicatif">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <p class="text-explicatif"> Fusce eget nunc ultrices, suscipit mi eget, aliquet tortor. Vestibulum non imperdiet orci. Sed nulla nunc, egestas vitae sodales sit amet, consequat in eros. In ultrices velit vitae arcu euismod dapibus. Suspendisse sodales lobortis dolor, facilisis egestas justo fringilla vulputate. Nullam in mauris ante. Duis pretium id nisl quis suscipit. Nunc eros ipsum, egestas ut pharetra eu, pulvinar eget metus. Integer consectetur ligula ut nulla porta porta. Curabitur felis sem, pretium et metus sit amet, suscipit tempor nunc. Suspendisse potenti. Duis dapibus eros nec tristique consequat. Suspendisse quis ultrices nulla, a facilisis mi. Donec non metus facilisis, imperdiet lectus ac, laoreet ex. Pellentesque vestibulum lobortis arcu, ut venenatis nulla dictum gravida.</p>
+        <h2 class="titre-texte-explicatif fade-in" id="titre_intro"></h2>
+        <p class="text-explicatif fade-in" id="texte_intro"> </p>
+    </div>
+    <div class="alert-code-promo fade-in" id="code-promo-zone">
+        <p class="text-code">Jusqu'au 14 avril<br> En utilisant le code-promo <span>CHAPI</span><br>economisez 10€</p>
+        <img src="images/alert.png" alt="">
     </div>
 
     <div class="promotions-bloc">
@@ -53,12 +61,12 @@
         <div class="promotions-en-cours">
             <div class="reduc-box" id="premiere-reduc">
                 <div class="produit-reduc">
-                    <img src="images/promotions/Katana-of-Kozuk-iOden–Ame-no-Habakiri.png">
-                    <div class="prix-produit-reduc" id="prix-1er-reduc"> 1̶6̶0̶€ ➜ 120€</div>
+                    <img src="images/promotions/Katana-of-Kozuk-iOden–Ame-no-Habakiri.png" id="img-1er-reduc">
+                    <div class="prix-produit-reduc" id="prix-1er-reduc"></div>
                 </div>
                 <div class="texte-descriptif-produit-reduc" id="texte-1er-reduc">
-                    <h3 class="titre-katana-reduc" id="titre-1er-reduc">Ame no Habakiri</h3>
-                    <p class="contenu-texte-descriptif-produit-reduc">Ame no Habakiri est un Meito ayant appartenu à Kozuki Oden, qui l'utilisait avec un autre Meito, Enma.[2] Il fait partie des 21 Ô Wazamono[3] et a été forgé par Tenguyama Hitetsu qui la considère comme son chef-d'œuvre.[3] Son actuel propriétaire étant le fils d'Oden, Kozuki Momonosuke.</p>
+                    <h3 class="titre-katana-reduc" id="titre-1er-reduc"></h3>
+                    <p class="contenu-texte-descriptif-produit-reduc" id="texte-1er-reduc-desc"></p>
                     
                     <div class="line-descriptif-texte-produit-reduc">
                         <div class="mini-line-descriptif"></div>
@@ -81,12 +89,12 @@
             <div class="reduc-box" id="deuxieme-reduc">
 
                 <div class="produit-reduc">
-                    <img src="images/promotions/Katana-of-Kozuk-iOden–Ame-no-Habakiri.png">
-                    <div class="prix-produit-reduc" id="prix-1er-reduc"> 1̶6̶0̶€ ➜ 120€</div>
+                    <img src="images/promotions/Katana-of-Kozuk-iOden–Ame-no-Habakiri.png" id="img-2eme-reduc">
+                    <div class="prix-produit-reduc" id="prix-2eme-reduc"></div>
                 </div>
                 <div class="texte-descriptif-produit-reduc" id="texte-1er-reduc">
-                    <h3 class="titre-katana-reduc" id="titre-1er-reduc">Ame no Habakiri</h3>
-                    <p class="contenu-texte-descriptif-produit-reduc">Ame no Habakiri est un Meito ayant appartenu à Kozuki Oden, qui l'utilisait avec un autre Meito, Enma.[2] Il fait partie des 21 Ô Wazamono[3] et a été forgé par Tenguyama Hitetsu qui la considère comme son chef-d'œuvre.[3] Son actuel propriétaire étant le fils d'Oden, Kozuki Momonosuke.</p>
+                    <h3 class="titre-katana-reduc" id="titre-2eme-reduc">Ame no Habakiri</h3>
+                    <p class="contenu-texte-descriptif-produit-reduc" id="texte-2eme-reduc-desc">Ame no Habakiri est un Meito ayant appartenu à Kozuki Oden, qui l'utilisait avec un autre Meito, Enma.[2] Il fait partie des 21 Ô Wazamono[3] et a été forgé par Tenguyama Hitetsu qui la considère comme son chef-d'œuvre.[3] Son actuel propriétaire étant le fils d'Oden, Kozuki Momonosuke.</p>
                     
                     <div class="line-descriptif-texte-produit-reduc">
                         <div class="mini-line-descriptif"></div>
@@ -109,6 +117,7 @@
     </div>
 
     <div class="wrapper">
+
     </div>
 
     <div class="pied-de-page">
@@ -139,7 +148,6 @@
 
         <div class="colonne-pied-de-page" id="quatrieme-colonne">
             <img src="images/logo-Augma.png" width="150px">
-            <
 
         </div>
 
@@ -160,5 +168,4 @@
 </body>
 <!-- <script src="animate.js"></script> -->
 <script src="script.js"></script>
-<script src="slider.js"></script>
 </html>

@@ -10,26 +10,58 @@
 /* Police de texte : Italiana */
 /* font-family: 'Italiana', serif; */
 body::-webkit-scrollbar {
-    width: 10px; /* width of the entire scrollbar */
-  }
+    width: 10px;
+}
   
-  body::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0); /* color of the tracking area */
-  }
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
   
-  body::-webkit-scrollbar-thumb {
-    border-radius: 10px; /* roundness of the scroll thumb */
-    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
-  }
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
 
-@media(max-width: 2200px){
+@media(min-width: 100px){
     body{
         background-color: rgb(13, 12, 14);
-        
-          
+    }
+
+    .chapi{
+        position: absolute;
+        top: -50px;
+        right: 1px;
+        width: 150px;
+        height: 150px;
+        cursor:pointer;
+    }
+    .chapi img{
+        transform:rotate(-180deg);
+        cursor: pointer;
+    }
+
+    .alert-code-promo{
+        position: absolute;
+        left: 42%;
+        top: 460px;
+        display: none;
+    }
+
+    .alert-code-promo img{
+        width: 280px;
+        height: 150px;
+    }
+
+    .text-code{
+        color: aliceblue;
+        position: absolute;
+        text-align: center;
+        margin-top: 35px;
+        margin-left: 30px;
     }
 
     .text-header{
+        cursor: pointer;
         margin: auto;
         margin-bottom: 5px;
         width: fit-content;
@@ -69,45 +101,7 @@ body::-webkit-scrollbar {
     }
 
 
-    .slide-top {
-        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
 
-    @keyframes slide-top {
-        0% {
-          transform: translateY(-100px);
-        }
-        100% {
-          transform: translateY(0);
-        }
-    }
-
-    .slide-right {
-        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
-    @keyframes slide-right {
-        0% {
-          transform: translateX(-100px);
-        }
-        100% {
-          transform: translateX(0);
-        }
-    }
-
-    .slide-out-left {
-        animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    }
-
-    @keyframes slide-out-left {
-        0% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        100% {
-          transform: translateX(-1000px);
-          opacity: 0;
-        }
-      }
     .nav{
         position: relative;
         margin-left: 12.3%;
@@ -347,21 +341,24 @@ body::-webkit-scrollbar {
 
         .pied-de-page{
             position: absolute;
-            left: 13%;
+            left: 5%;
             top: 2500px;
             width: fit-content;
             height: 250px;
             display: grid;
             margin-left: 2%;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 200px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 150px;
             grid-auto-rows: minmax(20px, 500px);
     
+        }
+        #quatrieme-colonne img{
+            display: none;
         }
 
         .footer{
             height: 20px;
-            width: 99%;
+            width: 98%;
             background-color: rgba(66, 66, 66, 0.253);
             position: absolute;
             top: 2900px;
@@ -371,7 +368,7 @@ body::-webkit-scrollbar {
                 width: 700px;
                 position: sticky;
                 display: grid;
-                margin-left: 7%;
+                margin-left: 6%;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 10px;
                 grid-auto-rows: minmax(10px, auto);

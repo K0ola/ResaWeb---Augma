@@ -9,10 +9,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 /* Police de texte : Italiana */
 /* font-family: 'Italiana', serif; */
+body::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px; /* roundness of the scroll thumb */
+    border: 1px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+  }
 
 @media(max-width: 2200px){
     body{
         background-color: rgb(13, 12, 14);
+        
+          
     }
 
     .text-header{
@@ -54,21 +68,6 @@
         background-color: white;
     }
 
-    .nav{
-        position: relative;
-        margin-left: 13%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 50px;
-        grid-auto-rows: minmax(10px, auto);
-    }
-
-    .bouton-nav {
-        width: 150px;
-        height: fit-content;
-        border-radius: 21px;
-        text-align: center;
-    }
 
     .slide-top {
         animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -109,7 +108,21 @@
           opacity: 0;
         }
       }
+    .nav{
+        position: relative;
+        margin-left: 12.3%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        grid-auto-rows: minmax(10px, auto);
+    }
 
+    .bouton-nav {
+        width: 150px;
+        height: fit-content;
+        border-radius: 21px;
+        text-align: center;
+    }
 
 
     .bouton-nav:hover {
@@ -117,45 +130,277 @@
     }
 
     .underline-bouton-nav img{
+        padding-top: 2px;
         margin-left: -40px;
-        margin-top: -400px;
         width: 150px;
     }
 
-
-
-
-    .bouton-nav p{
-        
+    .bouton-nav a{
+        margin-top: 5px;
         font-family: 'Italiana', serif;
         color: rgb(199, 200, 211);
+        font-size: 1.7em;
+        text-decoration: none;
+    }
+
+    .texte-intro{
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        top: 250px;
+        text-align: center;
+        color: azure;
+    }
+
+    .text-explicatif{
+        line-height: 30px;
+    }
+
+    .promotions-bloc{
+        width: 98%;
+        position: absolute;
+        top: 700px;
+    }
+    .line-promotions-bloc{
+        height: 3px;
+        background-color: aliceblue;
+    }
+    #line-promotions{
+        display: flex;
+    }
+    #mini-line{
+        box-shadow: 0px 0px 5px aliceblue;
+        margin-left: 2%;
+        width: 200px;
+    }
+    #titre-bloc-promotions{
+        color: rgb(199,200,211);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -15px;
+        font-size: 1.9em;
+        font-family: 'Italiana', serif;
+    }
+    #grande-line{
+        width: 100%;
+        box-shadow: 0px 0px 5px aliceblue;
+    }
+    .promotions-en-cours{
+        display: grid;
+        margin-left: 2%;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-auto-rows: minmax(10px, 450px);
+    }
+    .produit-reduc img{
+        background-color: rgba(119, 119, 119, 0.199);
+        width: 400px;
+        border-top-left-radius: 14px;
+    }
+    .produit-reduc{
+        display: block;
+    }
+
+    .prix-produit-reduc{
+        padding: 3px;
+        width: fit-content;
+        background-color: rgb(26, 26, 26);
+        margin-left: 34%;
+        font-size: 1.2em;
+        color: rgb(199, 200, 211);
+    }
+    .reduc-box{
+        cursor: pointer;
+        display: flex;
+        border-radius: 15px;
+        background-color: rgba(71, 71, 71, 0.514);
+    }
+    .titre-katana-reduc{
+        font-size: 1.7em;
+        color: rgba(240, 248, 255, 0.877);
+        text-align: center;
+    }
+    .contenu-texte-descriptif-produit-reduc{
+        text-align: center;
+        padding: 5px;
+        color: rgb(221, 221, 221);
+        margin-left: 5px;
+    }
+
+    .line-descriptif-texte-produit-reduc{
+        margin-top: 30px;
+        display: flex;
+    }
+
+    .mini-line-descriptif {
+        background-color: aliceblue;
+        width: 10%;
+        height: 3px;
+    }
+
+    .titre-description-produit-reduc{
+        color: rgb(199,200,211);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -13px;
         font-size: 1.5em;
+        font-family: 'Italiana', serif;
+    }
+    .grande-line-descriptif{
+        background-color: aliceblue;
+        width: 70%;
+        height: 3px;
+    }
+    .description-produit-reduc{
+        padding-left: 3%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(10px, auto);
+
+    }
+    .description-produit-reduc p{
+        color: aliceblue;
     }
 
+    .pied-de-page{
+        position: absolute;
+        left: 13%;
+        top: 2000px;
+        width: fit-content;
+        height: 250px;
+        display: grid;
+        margin-left: 2%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 200px;
+        grid-auto-rows: minmax(20px, 500px);
 
-    @media(max-width: 1162px){
-        .nav{
-            width: 768px;
-            position: sticky;
-            display: block;
-            
-        }
-        #propos {
-            margin-right: 0px;
-        }
-        #contact{
-            margin-left: 0px;
+    }
+
+    .colonne-pied-de-page{
+        line-height: 40px;
+        text-align: left;
+        display: block;
+    }
+
+    .colonne-pied-de-page a{
+        cursor: pointer;
+        color: rgba(212, 212, 212, 0.87);
+    }
+
+    .colonne-pied-de-page a:hover{
+        text-decoration: underline;
+    }
+
+    .premier-lien-colonne{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+    #quatrieme-colonne{
+        margin-left: 50px;
+    }
+    #quatrieme-colonne img{
+        cursor: pointer;
+    }
+
+    .footer{
+        height: 20px;
+        width: 99%;
+        background-color: rgba(66, 66, 66, 0.253);
+        position: absolute;
+        top: 2260px;
+    }
+    .marque-depose{
+        color: aliceblue;
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+    .wrapper {
+        left: 10%;
+        width: 80%;
+        height: 500px;
+        position: absolute;
+        top: 1300px;
+        border-top: solid aliceblue;
+        border-bottom: solid aliceblue;
+    }
+
+    @media(max-width: 1540px) {
+
+        .promotions-en-cours{
+            display: grid;
+            margin-left: 2%;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                grid-auto-rows: minmax(10px, 500px);
         }
 
-        .bouton-nav {
-            margin-top: 1px;
+        .wrapper {
+            left: 10%;
+            width: 80%;
+            height: 500px;
+            position: absolute;
+            top: 1900px;
+            border-top: solid aliceblue;
+            border-bottom: solid aliceblue;
+        }
+
+        .pied-de-page{
+            position: absolute;
+            left: 13%;
+            top: 2500px;
             width: fit-content;
-            height: 60px;
-            border-radius: 21px;
-            text-align: left;
+            height: 250px;
+            display: grid;
+            margin-left: 2%;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 200px;
+            grid-auto-rows: minmax(20px, 500px);
+    
         }
 
+        .footer{
+            height: 20px;
+            width: 99%;
+            background-color: rgba(66, 66, 66, 0.253);
+            position: absolute;
+            top: 2900px;
+        }
+        @media(max-width: 1162px){
+            .nav{
+                width: 700px;
+                position: sticky;
+                display: grid;
+                margin-left: 7%;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                grid-auto-rows: minmax(10px, auto);
+            
+            }
+            #propos {
+                margin-right: 0px;
+            }
+            #contact{
+                margin-left: 0px;
+            }
+
+            .bouton-nav {
+                margin-top: 5px;
+                width: fit-content;
+                height: 60px;
+                border-radius: 21px;
+                text-align: left;
+            }
+
+            .promotions-bloc{
+                width: 98%;
+                position: absolute;
+                top: 600px;
+            }
+
+            #grande-line{
+                width: 60%;
+            }
+        }
     }
-
 }
-

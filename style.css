@@ -132,6 +132,7 @@ p, a, h2, h3{
     }
 
     .bouton-nav {
+        margin-top: 2px;
         width: 150px;
         height: fit-content;
         border-radius: 21px;

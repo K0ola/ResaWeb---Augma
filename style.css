@@ -44,8 +44,16 @@ p, a, h2, h3{
 
 @media(min-width: 100px){
     body{
-        background-color: rgb(13, 12, 14);
+        background-color: rgb(15, 15, 15);
     }
+
+    *{
+        cursor: url('images/cursor-normal.svg'), auto;
+    }
+
+    /* a, .chapi, img, .reduc-box{
+        cursor: url('images/cursor-pointer.svg'), auto;
+    } */
 
     .chapi{
         position: absolute;
@@ -353,6 +361,10 @@ p, a, h2, h3{
                 grid-auto-rows: minmax(10px, 500px);
         }
 
+        .pied-de-page{
+            left: 20%;
+        }
+
         .wrapper {
             left: 10%;
             width: 80%;
@@ -365,7 +377,6 @@ p, a, h2, h3{
 
         .pied-de-page{
             position: absolute;
-            left: 5%;
             top: 2500px;
             width: fit-content;
             height: 250px;
@@ -420,11 +431,50 @@ p, a, h2, h3{
                 .promotions-bloc{
                     width: 98%;
                     position: absolute;
-                    top: 600px;
+                    top: 800px;
+                }
+
+                .reduc-box{
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                    display: flex;
+                    border-radius: 15px;
+                    background-color: rgba(71, 71, 71, 0.514);
                 }
 
                 #grande-line{
                     width: 60%;
+                }
+
+                @media(max-width: 810px){
+                    .reduc-box img{
+                        width: 200px;
+                    }
+                    .prix-produit-reduc{
+                        margin-left: 20%;
+                    }
+
+                    @media(max-width: 590px) {
+                        .wrapper{
+                            top: 2000px;
+                        }
+
+                        .promotions-bloc{
+                            width: 98%;
+                            position: absolute;
+                            top: 900px;
+                        }
+
+                        .reduc-box img{
+                            display: none;
+                        }
+
+                        .reduc-box{
+                            display: block;
+                            height: fit-content;
+                        }
+                        
+                    }
                 }
             }
         }

@@ -50,7 +50,7 @@ p, a, h2, h3{
     *{
         cursor: url('images/cursor-normal.svg'), auto;
     }
-    a, img, h1, .bouton-nav, .chapi {
+    a, img, h1, .bouton-nav, .chapi, .bouton-nav a {
         cursor: pointer, auto;
     }
 

@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Niagato';
+	src: url('/fonts/Niagato.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'mangati';
+	src: url('/fonts/mangati.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'CatCafe';
+	src: url('/fonts/CatCafe.ttf') format('truetype')
+}
+
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+p, a, h2, h3{
+    font-family: 'CatCafe';
+}
+
+@media(min-width: 100px){
+    body{
+        background-color: rgb(15, 15, 15);
+    }
+
+    *{
+        cursor: url('images/cursor-normal.svg'), auto;
+    }
+}
+
+header {
+    margin-top: 20px;
+}
+
+.text-header{
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 5px;
+    width: fit-content;
+    color: rgb(199, 200, 211);
+    font-family: 'mangati';
+    font-size: 2.5em;
+}

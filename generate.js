@@ -16,6 +16,11 @@ fetch('data-main.json').then(function (response) {
         const price_2reduc = document.getElementById('prix-2eme-reduc');
         const img_2reduc = document.getElementById('img-2eme-reduc');
 
+        const texte_3reduc = document.getElementById('texte-3eme-reduc-desc');
+        const title_3reduc = document.getElementById('titre-3eme-reduc');
+        const price_3reduc = document.getElementById('prix-3eme-reduc');
+        const img_3reduc = document.getElementById('img-3eme-reduc');
+
 
 
         data.forEach(function (element) {
@@ -32,6 +37,10 @@ fetch('data-main.json').then(function (response) {
             texte_2reduc.innerHTML = data[3].deuxieme_reduc.texte_presentation;
             price_2reduc.innerHTML = data[3].deuxieme_reduc.price + "€ ➜ " + data[3].deuxieme_reduc.price_after_reduc+"€";
 
+
+            title_3reduc.innerHTML = data[4].troisieme_reduc.name;
+            texte_3reduc.innerHTML = data[4].troisieme_reduc.texte_presentation;
+            price_3reduc.innerHTML = data[4].troisieme_reduc.price + "€ ➜ " + data[4].troisieme_reduc.price_after_reduc+"€";
 
         })
     })

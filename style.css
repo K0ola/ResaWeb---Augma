@@ -42,6 +42,15 @@ p, a, h2, h3{
     font-family: 'CatCafe';
 }
 
+.top-page-utile{
+    color: aliceblue;
+    text-decoration: none;
+}
+.top-page-utile:hover{
+    text-decoration: underline;
+}
+
+
 @media(min-width: 100px){
     body{
         background-color: rgb(15, 15, 15);
@@ -50,13 +59,11 @@ p, a, h2, h3{
     *{
         cursor: url('images/cursor-normal.svg'), auto;
     }
-    a, img, h1, .bouton-nav, .chapi, .bouton-nav a {
-        cursor: pointer, auto;
+
+    a, .chapi, img, .reduc-box{
+        cursor: pointer;
     }
 
-    /* a, .chapi, img, .reduc-box{
-        cursor: url('images/cursor-pointer.svg'), auto;
-    } */
 
     .chapi{
         position: absolute;
@@ -118,7 +125,7 @@ p, a, h2, h3{
     }
 
     #text-intro-explicatif{
-        text-align: center;
+        text-align: left;
         color: rgb(199, 200, 211);
         font-family: 'CatCafe';
     }
@@ -174,7 +181,7 @@ p, a, h2, h3{
         position: absolute;
         left: 10%;
         top: 250px;
-        text-align: center;
+        text-align: left;
         color: azure;
     }
     .titre-texte-explicatif{
@@ -217,13 +224,13 @@ p, a, h2, h3{
     .promotions-en-cours{
         display: grid;
         margin-left: 2%;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             grid-auto-rows: minmax(10px, 450px);
     }
     .produit-reduc img{
         background-color: rgba(119, 119, 119, 0.199);
-        width: 400px;
+        width: 200px;
         border-top-left-radius: 14px;
     }
     .produit-reduc{
@@ -234,11 +241,12 @@ p, a, h2, h3{
         padding: 3px;
         width: fit-content;
         background-color: rgb(26, 26, 26);
-        margin-left: 34%;
+        margin-left: 22%;
         font-size: 1.2em;
         color: rgb(199, 200, 211);
     }
     .reduc-box{
+        width: 650px;
         cursor: pointer;
         display: flex;
         border-radius: 15px;
@@ -250,7 +258,8 @@ p, a, h2, h3{
         text-align: center;
     }
     .contenu-texte-descriptif-produit-reduc{
-        text-align: center;
+        width: 70%;
+        text-align: left;
         padding: 5px;
         color: rgb(221, 221, 221);
         margin-left: 5px;
@@ -352,134 +361,5 @@ p, a, h2, h3{
         top: 1300px;
         border-top: solid aliceblue;
         border-bottom: solid aliceblue;
-    }
-
-    @media(max-width: 1540px) {
-
-        .promotions-en-cours{
-            display: grid;
-            margin-left: 2%;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-                grid-auto-rows: minmax(10px, 500px);
-        }
-
-        .pied-de-page{
-            left: 20%;
-        }
-
-        .wrapper {
-            left: 10%;
-            width: 80%;
-            height: 500px;
-            position: absolute;
-            top: 1900px;
-            border-top: solid aliceblue;
-            border-bottom: solid aliceblue;
-        }
-
-        .pied-de-page{
-            position: absolute;
-            top: 2500px;
-            width: fit-content;
-            height: 250px;
-            display: grid;
-            margin-left: 2%;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 150px;
-            grid-auto-rows: minmax(20px, 500px);
-    
-        }
-        #quatrieme-colonne img{
-            display: none;
-        }
-
-        .footer{
-            height: 20px;
-            width: 98%;
-            background-color: rgba(66, 66, 66, 0.253);
-            position: absolute;
-            top: 2900px;
-        }
-        @media(max-width: 1370px){
-            .alert-code-promo, .alert-code-promo img, .alert-code-promo p, .chapi{
-                display: none;
-            }
-            @media(max-width: 1162px){
-                .nav{
-                    width: 700px;
-                    position: sticky;
-                    display: grid;
-                    margin-left: 6%;
-                    grid-template-columns: repeat(4, 1fr);
-                    gap: 10px;
-                    grid-auto-rows: minmax(10px, auto);
-            
-                }
-                #propos {
-                    margin-right: 0px;
-                }
-                #contact{
-                    margin-left: 0px;
-                }
-
-                .bouton-nav {
-                    margin-top: 5px;
-                    width: fit-content;
-                    height: 60px;
-                    border-radius: 21px;
-                    text-align: left;
-                }
-
-                .promotions-bloc{
-                    width: 98%;
-                    position: absolute;
-                    top: 800px;
-                }
-
-                .reduc-box{
-                    margin-bottom: 30px;
-                    cursor: pointer;
-                    display: flex;
-                    border-radius: 15px;
-                    background-color: rgba(71, 71, 71, 0.514);
-                }
-
-                #grande-line{
-                    width: 60%;
-                }
-
-                @media(max-width: 810px){
-                    .reduc-box img{
-                        width: 200px;
-                    }
-                    .prix-produit-reduc{
-                        margin-left: 20%;
-                    }
-
-                    @media(max-width: 590px) {
-                        .wrapper{
-                            top: 2000px;
-                        }
-
-                        .promotions-bloc{
-                            width: 98%;
-                            position: absolute;
-                            top: 900px;
-                        }
-
-                        .reduc-box img{
-                            display: none;
-                        }
-
-                        .reduc-box{
-                            display: block;
-                            height: fit-content;
-                        }
-                        
-                    }
-                }
-            }
-        }
     }
 }

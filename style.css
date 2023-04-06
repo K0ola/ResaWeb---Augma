@@ -246,7 +246,7 @@ p, a, h2, h3{
         color: rgb(199, 200, 211);
     }
     .reduc-box{
-        width: 650px;
+        width: 570px;
         cursor: pointer;
         display: flex;
         border-radius: 15px;
@@ -258,7 +258,7 @@ p, a, h2, h3{
         text-align: center;
     }
     .contenu-texte-descriptif-produit-reduc{
-        width: 70%;
+        width: 90%;
         text-align: left;
         padding: 5px;
         color: rgb(221, 221, 221);

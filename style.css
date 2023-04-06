@@ -50,6 +50,9 @@ p, a, h2, h3{
     *{
         cursor: url('images/cursor-normal.svg'), auto;
     }
+    a, img, h1 {
+        cursor: pointer, auto;
+    }
 
     /* a, .chapi, img, .reduc-box{
         cursor: url('images/cursor-pointer.svg'), auto;

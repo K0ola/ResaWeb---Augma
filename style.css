@@ -246,7 +246,7 @@ p, a, h2, h3{
         color: rgb(199, 200, 211);
     }
     .reduc-box{
-        /* width: 650px; */
+        width: 500px;
         cursor: pointer;
         display: flex;
         border-radius: 15px;

@@ -301,10 +301,20 @@ p, a, h2, h3{
         color: aliceblue;
     }
 
+
+    .barre-separation{
+        margin: auto;
+        background-color: aliceblue;
+        width: 90%;
+        height: 2px;
+        position: relative;
+        top: 1450px;
+    }
+
     .pied-de-page{
         position: absolute;
         left: 13%;
-        top: 2000px;
+        top: 1700px;
         width: fit-content;
         height: 250px;
         display: grid;
@@ -346,22 +356,14 @@ p, a, h2, h3{
         width: 99%;
         background-color: rgba(66, 66, 66, 0.253);
         position: absolute;
-        top: 2260px;
+        top: 2000px;
     }
     .marque-depose{
         color: aliceblue;
         margin-top: 2px;
         margin-left: 5px;
     }
-    .wrapper {
-        left: 10%;
-        width: 80%;
-        height: 500px;
-        position: absolute;
-        top: 1300px;
-        border-top: solid aliceblue;
-        border-bottom: solid aliceblue;
-    }
+
 
     @media(max-width: 1900px){
         /* *{
@@ -376,28 +378,19 @@ p, a, h2, h3{
                 grid-auto-rows: minmax(10px, 450px);
         }
 
-        .wrapper {
-            left: 10%;
-            width: 80%;
-            height: 500px;
-            position: absolute;
-            top: 2300px;
-            border-top: solid aliceblue;
-            border-bottom: solid aliceblue;
-        }
 
         .footer{
             height: 20px;
             width: 99%;
             background-color: rgba(66, 66, 66, 0.253);
             position: absolute;
-            top: 3260px;
+            top: 2700px;
         }
 
         .pied-de-page{
             position: absolute;
             left: 13%;
-            top: 3000px;
+            top: 2400px;
             width: fit-content;
             height: 250px;
             display: grid;
@@ -407,15 +400,92 @@ p, a, h2, h3{
             grid-auto-rows: minmax(20px, 500px);
     
         }
+        .barre-separation{
+            margin: auto;
+            background-color: aliceblue;
+            width: 90%;
+            height: 2px;
+            position: relative;
+            top: 2100px;
+        }
+    
 
         @media(max-width: 1420px) {
             .chapi, .alert-code-promo{
                 display: none;
             }
 
+            #quatrieme-colonne img{
+                margin-left: -200px;
+            }
+
+            .footer{
+                top:3370px;
+            }
+
+            @media(max-width: 1070px) {
+                .promotions-en-cours{
+                    display: grid;
+                    margin-left: 20%;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 10px;
+                        grid-auto-rows: minmax(10px, 450px);
+                }
+                #quatrieme-colonne img{
+                    margin-left: -200px;
+                }
+
+                .pied-de-page{
+                    position: absolute;
+                    left: 8%;
+                    top: 2350px;
+                    width: fit-content;
+                    height: 250px;
+                    display: grid;
+                    margin-left: 2%;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 200px;
+                    grid-auto-rows: minmax(20px, 500px);
+
+                        
+                    }
+                    .footer{
+                        top:2700px;
+                    }
+                    @media(max-width: 1020px) {
+                        #quatrieme-colonne img{
+                            display: none;
+                        }
+                        .footer{
+                            top: 2600px;
+                        }
+
+                        .pied-de-page{
+                            position: absolute;
+                            left: 8%;
+                            top: 2350px;
+                            width: fit-content;
+                            height: 250px;
+                            display: grid;
+                            margin-left: 2%;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 200px;
+                            grid-auto-rows: minmax(20px, 500px);
+
+                    }
+                        @media(max-width: 875px) {
+                            .nav, .promotions-en-cours{
+                                display: none;
+                            }
+                        
+                        }
+
+                    }
             
+                }
+
+
+
+            }
         }
-
-
-    }
 }

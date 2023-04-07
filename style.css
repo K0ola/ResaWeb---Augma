@@ -193,7 +193,7 @@ p, a, h2, h3{
     }
 
     .promotions-bloc{
-        width: 90%;
+        width: 98%;
         position: absolute;
         top: 700px;
     }
@@ -222,6 +222,7 @@ p, a, h2, h3{
         box-shadow: 0px 0px 5px aliceblue;
     }
     .promotions-en-cours{
+        width: 90%;
         display: grid;
         margin-left: 3%;
             grid-template-columns: repeat(3, 1fr);

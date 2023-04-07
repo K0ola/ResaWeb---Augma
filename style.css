@@ -426,7 +426,7 @@ p, a, h2, h3{
             @media(max-width: 1070px) {
                 .promotions-en-cours{
                     display: grid;
-                    margin-left: 20%;
+                    margin-left: 10%;
                         grid-template-columns: repeat(1, 1fr);
                         gap: 10px;
                         grid-auto-rows: minmax(10px, 450px);
@@ -474,18 +474,17 @@ p, a, h2, h3{
 
                     }
                         @media(max-width: 875px) {
-                            .nav, .promotions-en-cours{
-                                display: none;
+                            .nav{
+                                position: relative;
+                                margin-left: -5px;
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                gap: 50px;
+                                grid-auto-rows: minmax(10px, auto);
                             }
-                        
                         }
-
                     }
-            
                 }
-
-
-
             }
         }
 }

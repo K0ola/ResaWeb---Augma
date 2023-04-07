@@ -224,8 +224,9 @@ p, a, h2, h3{
     .promotions-en-cours{
         width: 90%;
         display: grid;
-        margin-left: 3%;
-            grid-template-columns: repeat(3, 1fr);
+        margin-left: 10%;
+        margin-top: 30px;
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
             grid-auto-rows: minmax(10px, 450px);
     }

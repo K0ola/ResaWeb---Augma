@@ -193,7 +193,7 @@ p, a, h2, h3{
     }
 
     .promotions-bloc{
-        width: 98%;
+        width: 90%;
         position: absolute;
         top: 700px;
     }
@@ -223,7 +223,7 @@ p, a, h2, h3{
     }
     .promotions-en-cours{
         display: grid;
-        margin-left: 2%;
+        margin-left: 3%;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             grid-auto-rows: minmax(10px, 450px);

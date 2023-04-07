@@ -362,4 +362,60 @@ p, a, h2, h3{
         border-top: solid aliceblue;
         border-bottom: solid aliceblue;
     }
+
+    @media(max-width: 1900px){
+        /* *{
+            border: solid red;
+        } */
+
+        .promotions-en-cours{
+            display: grid;
+            margin-left: 34%;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 10px;
+                grid-auto-rows: minmax(10px, 450px);
+        }
+
+        .wrapper {
+            left: 10%;
+            width: 80%;
+            height: 500px;
+            position: absolute;
+            top: 2300px;
+            border-top: solid aliceblue;
+            border-bottom: solid aliceblue;
+        }
+
+        .footer{
+            height: 20px;
+            width: 99%;
+            background-color: rgba(66, 66, 66, 0.253);
+            position: absolute;
+            top: 3260px;
+        }
+
+        .pied-de-page{
+            position: absolute;
+            left: 13%;
+            top: 3000px;
+            width: fit-content;
+            height: 250px;
+            display: grid;
+            margin-left: 2%;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 200px;
+            grid-auto-rows: minmax(20px, 500px);
+    
+        }
+
+        @media(max-width: 1420px) {
+            .chapi, .alert-code-promo{
+                display: none;
+            }
+
+            
+        }
+
+
+    }
 }

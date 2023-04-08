@@ -222,7 +222,6 @@ p, a, h2, h3{
         box-shadow: 0px 0px 5px aliceblue;
     }
     .promotions-en-cours{
-        width: 90%;
         display: grid;
         margin-left: 10%;
         margin-top: 30px;
@@ -305,18 +304,18 @@ p, a, h2, h3{
 
 
     .barre-separation{
-        margin: auto;
+        margin-left: 5%;
         background-color: aliceblue;
         width: 90%;
         height: 2px;
-        position: relative;
-        top: 1450px;
+        position: absolute;
+        top: 750px;
     }
 
     .pied-de-page{
         position: absolute;
         left: 13%;
-        top: 1700px;
+        top: 850px;
         width: fit-content;
         height: 250px;
         display: grid;
@@ -358,7 +357,8 @@ p, a, h2, h3{
         width: 99%;
         background-color: rgba(66, 66, 66, 0.253);
         position: absolute;
-        top: 2000px;
+        top: 1100px;
+
     }
     .marque-depose{
         color: aliceblue;
@@ -367,18 +367,14 @@ p, a, h2, h3{
     }
 
 
+
+
+
     @media(max-width: 1900px){
         /* *{
             border: solid red;
         } */
 
-        .promotions-en-cours{
-            display: grid;
-            margin-left: 34%;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 10px;
-                grid-auto-rows: minmax(10px, 450px);
-        }
 
 
         .footer{
@@ -386,13 +382,16 @@ p, a, h2, h3{
             width: 99%;
             background-color: rgba(66, 66, 66, 0.253);
             position: absolute;
-            top: 2700px;
+            top: 1100px;
         }
 
+        #quatrieme-colonne img{
+            margin-left: -200px;
+        }
         .pied-de-page{
             position: absolute;
+            top: 850px;
             left: 13%;
-            top: 2400px;
             width: fit-content;
             height: 250px;
             display: grid;
@@ -403,27 +402,47 @@ p, a, h2, h3{
     
         }
         .barre-separation{
-            margin: auto;
+            margin-left: 5%;
             background-color: aliceblue;
             width: 90%;
             height: 2px;
-            position: relative;
-            top: 2100px;
+            position: absolute;
+            top: 750px;
         }
     
 
-        @media(max-width: 1420px) {
+        @media(max-width: 1435px) {
             .chapi, .alert-code-promo{
                 display: none;
+            }
+            .promotions-en-cours{
+                display: grid;
+                margin-left: 25%;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 10px;
+                    grid-auto-rows: minmax(10px, 450px);
+            }
+
+            .reduc-box{
+                margin-top: 50px;
             }
 
             #quatrieme-colonne img{
                 margin-left: -200px;
             }
-
-            .footer{
-                top:2670px;
+            .pied-de-page{
+                position: absolute;
+                top: 1200px;
             }
+            .footer{
+                position: absolute;
+                top: 1500px;
+            }
+            .barre-separation{
+                position: absolute;
+                top: 1100px;
+            }
+
 
             @media(max-width: 1070px) {
                 .promotions-en-cours{
@@ -439,8 +458,8 @@ p, a, h2, h3{
 
                 .pied-de-page{
                     position: absolute;
+                    top: 1200px;
                     left: 8%;
-                    top: 2350px;
                     width: fit-content;
                     height: 250px;
                     display: grid;
@@ -452,20 +471,22 @@ p, a, h2, h3{
                         
                     }
                     .footer{
-                        top:2700px;
+                        position: absolute;
+                        top: 1500px;
                     }
                     @media(max-width: 1020px) {
                         #quatrieme-colonne img{
                             display: none;
                         }
                         .footer{
-                            top: 2600px;
+                            position: absolute;
+                            top: 1500px;
                         }
 
                         .pied-de-page{
                             position: absolute;
                             left: 8%;
-                            top: 2350px;
+                            top: 1200px;
                             width: fit-content;
                             height: 250px;
                             display: grid;

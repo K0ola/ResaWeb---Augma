@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="generation.css">
     <script src="generate.js"></script>
-    <title>Augma | Accueil</title>
+    <title>Accueil | Augma</title>
 </head>
 <body>
     <a class="top-page-utile" href="#texte-intro" alt="aller au contenu">Aller au contenu</a>
@@ -27,19 +27,19 @@
     </header>
     <div class="nav slide-top">
         <div class="bouton-nav" id="shop">
-            <a href="shop.php">Boutique</a>
+            <a href="shop.php" alt="boutique">Boutique</a>
             <div class="underline-bouton-nav" id="under-shop"></div>
         </div>
         <div class="bouton-nav" id="propos">
-            <a href="propos.html">À propos</a>
+            <a href="propos.html" alt="a propos">À propos</a>
             <div class="underline-bouton-nav" id="under-propos"></div>
         </div>
         <div class="bouton-nav" id="contact">
-            <a href="contact.php">Contact</a>
+            <a href="contact.php" alt="nous contacter">Contact</a>
             <div class="underline-bouton-nav" id="under-contact"></div>
         </div>  
         <div class="bouton-nav" id="news">
-            <a href="news.html">Nouveautés</a>
+            <a href="news.html" alt="Nouveautés">Nouveautés</a>
             <div class="underline-bouton-nav" id="under-news"></div>
         </div>
     </div>
@@ -61,7 +61,7 @@
         </div>
 
         <div class="promotions-en-cours">
-            <div class="reduc-box" id="premiere-reduc">
+            <div class="reduc-box" id="premiere-reduc" href="google.com">
                 <div class="produit-reduc">
                     <img src="images/promotions/Katana-of-Kozuk-iOden–Ame-no-Habakiri.png" id="img-1er-reduc">
                     <div class="prix-produit-reduc" id="prix-1er-reduc"></div>
@@ -121,7 +121,7 @@
 
     <div class="pied-de-page">
         <div class="colonne-pied-de-page" id="premiere-colonne">
-            <a class="premier-lien-colonne">Accueil<br></a>
+            <a class="premier-lien-colonne" href="#top">Accueil<br></a>
             <a href="shop.php">Boutique<br></a>
             <a href="contact.php">Contact<br></a>
             <a href="propos.php">À propos<br></a>

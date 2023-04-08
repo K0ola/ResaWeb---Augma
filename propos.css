@@ -47,97 +47,6 @@ body{
     color: aliceblue;
     font-family: 'mangati';
 }
-.text-disclaimer{
-    text-align: center; 
-    color: aliceblue;
-}
-.warning{
-    left: 13%;
-    position: absolute;
-    top: 300px;
-    display: flex;
-}
-
-/* .warning p {
-    margin-top: 50px;
-} */
-
-.warning img {
-    width: 50px;
-    height: 50px;
-}
-form {
-    position: absolute;
-    top: 550px;
-    left: 30%;
-    width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f2f2f267;
-    font-family: Arial, sans-serif;
-    
-  }
-  
-  /* Style pour les champs de formulaire */
-  label, input, textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-top: 20px;
-  }
-
-  input[type="email"], textarea {
-    padding: 10px;
-    width: 40%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  input[type="text"], textarea {
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    resize: none;
-  }
-  
-  input[type="submit"] {
-    width: 100px;
-    background-color: #6a27e7;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .envoyer{
-    margin-top: 30px;
-    float: right;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #3b1a77;
-  }
-
-  .barre-separation{
-    margin-left: 5%;
-    background-color: aliceblue;
-    width: 90%;
-    height: 2px;
-    position: absolute;
-    top: 1000px;
-}
 
 .pied-de-page{
     position: absolute;
@@ -240,4 +149,3 @@ form {
     height: 1px;
     background-color: white;
 }
-

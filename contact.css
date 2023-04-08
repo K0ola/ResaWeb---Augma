@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Niagato';
+	src: url('fonts/Niagato.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'mangati';
+	src: url('fonts/mangati.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'CatCafe';
+	src: url('fonts/CatCafe.ttf') format('truetype')
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/* Police de texte : Italiana */
+/* font-family: 'Italiana', serif; */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+.text-header{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'mangati';
+}
+.text-disclaimer{
+    text-align: center; 
+    color: aliceblue;
+}
+.warning{
+    left: 13%;
+    position: absolute;
+    top: 300px;
+    display: flex;
+}
+
+/* .warning p {
+    margin-top: 50px;
+} */
+
+.warning img {
+    width: 50px;
+    height: 50px;
+}
+form {
+    position: absolute;
+    top: 550px;
+    left: 30%;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f2f2f267;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  /* Style pour les champs de formulaire */
+  label, input, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  input[type="email"], textarea {
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="text"], textarea {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  input[type="submit"] {
+    width: 100px;
+    background-color: #6a27e7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .envoyer{
+    margin-top: 30px;
+    float: right;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3b1a77;
+  }
+
+  .barre-separation{
+    margin-left: 5%;
+    background-color: aliceblue;
+    width: 90%;
+    height: 2px;
+    position: absolute;
+    top: 1000px;
+}
+
+.pied-de-page{
+    position: absolute;
+    left: 25%;
+    top: 1100px;
+    width: fit-content;
+    height: 250px;
+    display: grid;
+    margin-left: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 200px;
+    grid-auto-rows: minmax(20px, 500px);
+
+}
+
+.colonne-pied-de-page{
+    line-height: 40px;
+    text-align: left;
+    display: block;
+}
+
+.colonne-pied-de-page a{
+    cursor: pointer;
+    color: rgba(212, 212, 212, 0.87);
+}
+
+.colonne-pied-de-page a:hover{
+    text-decoration: underline;
+}
+
+.premier-lien-colonne{
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+#quatrieme-colonne{
+    margin-left: 50px;
+}
+#quatrieme-colonne img{
+    cursor: pointer;
+}
+
+.footer{
+    height: 20px;
+    width: 99%;
+    background-color: rgba(66, 66, 66, 0.253);
+    position: absolute;
+    top: 1400px;
+
+}
+.marque-depose{
+    color: aliceblue;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+
+
+
+
+.nav{
+    position: relative;
+    margin-left: 12.3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.bouton-nav {
+    margin-top: 2px;
+    width: 150px;
+    height: fit-content;
+    border-radius: 21px;
+    text-align: center;
+}
+
+
+.bouton-nav:hover {
+    cursor: pointer;
+}
+
+.underline-bouton-nav img{
+    padding-top: 2px;
+    margin-left: -40px;
+    width: 150px;
+}
+
+.bouton-nav a{
+    margin-top: 5px;
+    font-family: 'CatCafe';
+    color: rgb(199, 200, 211);
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+#line {
+    position: sticky;
+    margin: auto;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+}

@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Niagato';
+	src: url('fonts/Niagato.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'mangati';
+	src: url('fonts/mangati.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'CatCafe';
+	src: url('fonts/CatCafe.ttf') format('truetype')
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/* Police de texte : Italiana */
+/* font-family: 'Italiana', serif; */
+*{
+    font-family: 'CatCafe';
+}
+body {
+    margin: 0;
+    height: fit-content;
+    scroll-behavior: smooth;
+    background-color: rgb(64, 64, 64); 
+  }
+  h1{
+    color: aliceblue;
+    text-align: center;
+  }
+
+  form{
+    margin-top: 50px;
+    margin-left: 50%;
+    translate: -50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    font-size: 2em;
+  }
+
+  form input, form textarea{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .envoyer{
+    margin-top: 20px;
+    height: 45px;
+    width: 150px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+
+  form label{
+    margin-left: 50%;
+    translate: -50%;
+    margin-top: 20px;
+    color: aliceblue;
+  }
+
+  form textarea{
+    height: 100px;
+  }
+  
+
+  
+.nav-propos{
+    padding: 5px;
+    z-index: 1;
+    font-size: 2em;
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nav-propos p{
+    text-align: center;
+    color: aliceblue;
+}
+.nav-propos a{
+    text-align: center;
+    color: rgb(159, 159, 159);
+    text-decoration: none;
+}
+.bar-nav-sepa{
+    border-top: solid aliceblue;
+}
+#aide-nav{
+    border-top: solid rgba(112, 123, 133, 0);
+}
+
+
+@media (max-width: 1040px){
+    form{
+        margin-left: 70%;
+    }
+    h1{
+        margin-left: 50%;
+    }
+}

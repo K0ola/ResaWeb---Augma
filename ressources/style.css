@@ -1,0 +1,645 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Niagato';
+	src: url('fonts/Niagato.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'mangati';
+	src: url('fonts/mangati.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'CatCafe';
+	src: url('fonts/CatCafe.ttf') format('truetype')
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/* Police de texte : Italiana */
+/* font-family: 'Italiana', serif; */
+
+body {
+    margin: 0;
+  }
+  
+  header {
+    margin: 0;
+  }
+
+body{
+    height: fit-content;
+    scroll-behavior: smooth;
+    background-color: rgb(54, 54, 54);
+}
+/* body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.464);
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: aliceblue;
+} */
+
+
+p, a, h2, h3{
+    font-family: 'CatCafe';
+}
+
+
+.navbar {
+    position: fixed;
+    top: -500px;
+    width: 100%;
+    transition: top 0.3s;
+    margin-top: 30px;
+    z-index: 2;
+    display: flex;
+    font-size: 3em;
+    justify-content: space-around;
+    font-family: 'CatCafe';
+}
+.bouton-nav a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.bouton-nav img{
+width: 70px;
+}
+.navbar.scrolled {
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tozetop{
+    z-index: 3;
+    position: fixed;
+    width: 70px;
+    top: 92vh;
+    left: 95%;
+    rotate: -90deg;
+}
+
+/* .top-page-utile{
+    color: aliceblue;
+    text-decoration: none;
+}
+.top-page-utile:hover{
+    text-decoration: underline;
+} */
+
+
+header {
+  position: relative;
+  height: 100vh; /* Réglez la hauteur selon vos besoins */
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.background-main {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/header-img-2.jpg');
+  background-position: 50% 30%;
+
+}
+
+  
+  
+
+.text-header{
+    position: absolute;
+    color: aliceblue;
+    top: 35%;
+    left: 50px;
+}
+.text-header h1{
+    color: aliceblue;
+    width: 100%;
+    font-size: 2em;
+}
+.text-header p{
+    color: rgb(203, 203, 203);
+    width: 50%;
+    font-size: 1.35em;
+}
+
+
+.flotter {
+    animation: flotter 1s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .un{
+    width: 100px;
+    rotate: 90deg;
+    position: absolute;
+    left: 48%;
+    top: 550px;
+  }
+  .deux{
+    width: 100px;
+    rotate: 90deg;
+    position: absolute;
+    left: 48%;
+    top: 500px;
+  }
+  
+  
+  @keyframes flotter {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-15px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
+
+.container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+.v-slider-bloc{
+    font-size: 10em;
+    color: aliceblue;
+    scroll-snap-align: start;
+}
+#article{
+    padding-top: 30px;
+    height: 200vh;
+    background-color: rgb(107, 107, 107);
+}
+.slider-zone{
+    width: 100%;
+    height: 500px;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.slider-{
+    transition: 1s;
+    width: fit-content;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* gap: 500px;
+    margin-left: 0; */
+    position: relative;
+    flex-shrink: 1;
+}
+
+.slide{
+    width: 99vw;
+    height: 95%; 
+    /* border: solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+.spot-slide{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border: blue;
+}
+.spot-slide p{
+    text-align: center;
+    font-size: 0.1em;
+}
+
+.image-slide{
+    width: 80%;
+}
+
+
+
+.position-slider{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -10px;
+}
+.pos-slide{
+    width: 50px;
+    height: 0px;
+    border: solid 2px rgb(197, 197, 197);
+}
+.bouton-slider{
+    z-index: 3;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+}
+#btn-left{
+    position: absolute;
+    left: 3%;
+    transform: rotate(-180deg);
+}
+#btn-right{
+    position: absolute;
+    left: 95%;
+}
+
+footer {
+    height: 100vh;
+    background-color: rgb(59, 59, 59);
+  }
+
+  .footer_container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0.32em;
+  }
+  footer h1{
+    font-size: 0.2em;
+    font-family: 'CatCafe';
+  }
+  footer a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 0.2em;
+  }
+  .footer-column{
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar-sepa{
+    width: 80%;
+    height: 0px;
+    border: solid black 2px;
+    position: relative;
+    left: 50%;
+    margin-top: 400px;
+    transform: translate(-50%);
+  }
+  .zone-icon-footer{
+    margin-top: 30px;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-footer{
+    width: 90px;
+  }
+
+  @media (max-width: 1032px){
+    footer{
+        height: 150vh;
+    }
+    .text-header p{
+        width: 100%;
+    }
+    .un,.deux{
+        position: absolute;
+        left: 80%;
+    }
+    @media (max-width:1007px) {
+        .navbar{
+            font-size: 2em
+        }
+    }
+  }
+
+  form{
+    display: flex;
+  }
+  label{
+    font-size: 0.2em;
+  }
+  
+/* 
+
+@media(min-width: 100px){
+    body{
+        background-color: rgb(15, 15, 15);
+    }
+
+    *{
+        cursor: url('images/cursor-normal.svg'), auto;
+    }
+
+
+    .text-header{
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 5px;
+        width: fit-content;
+        color: rgb(199, 200, 211);
+        font-family: 'mangati';
+        font-size: 5em;
+    }
+
+    header {
+        margin-top: 20px;
+    }
+
+    #text-intro-explicatif{
+        text-align: left;
+        color: rgb(199, 200, 211);
+        font-family: 'CatCafe';
+    }
+
+    #line {
+        position: sticky;
+        margin: auto;
+        width: 80%;
+        height: 1px;
+        background-color: white;
+    }
+
+
+
+    .bouton-nav {
+        margin-top: 2px;
+        width: 150px;
+        height: fit-content;
+        border-radius: 21px;
+        text-align: center;
+    }
+
+
+    .bouton-nav:hover {
+        cursor: pointer;
+    }
+
+    .underline-bouton-nav img{
+        padding-top: 2px;
+        margin-left: -40px;
+        width: 150px;
+    }
+
+    .bouton-nav a{
+        margin-top: 5px;
+        font-family: 'CatCafe';
+        color: rgb(199, 200, 211);
+        font-size: 1.7em;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .texte-intro{
+        width: 80%;
+        position: absolute;
+        left: 10%;
+        top: 250px;
+        text-align: left;
+        color: azure;
+    }
+    .titre-texte-explicatif{
+        font-family: 'CatCafe';
+    }
+    .text-explicatif{
+        line-height: 30px;
+        font-family: 'CatCafe';
+    }
+
+    .barre-separation{
+        margin-left: 5%;
+        background-color: aliceblue;
+        width: 90%;
+        height: 2px;
+        position: absolute;
+        top: 750px;
+    }
+
+    .pied-de-page{
+        position: absolute;
+        left: 13%;
+        top: 850px;
+        width: fit-content;
+        height: 250px;
+        display: grid;
+        margin-left: 2%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 200px;
+        grid-auto-rows: minmax(20px, 500px);
+
+    }
+
+    .colonne-pied-de-page{
+        line-height: 40px;
+        text-align: left;
+        display: block;
+    }
+
+    .colonne-pied-de-page a{
+        cursor: pointer;
+        color: rgba(212, 212, 212, 0.87);
+    }
+
+    .colonne-pied-de-page a:hover{
+        text-decoration: underline;
+    }
+
+    .premier-lien-colonne{
+        font-size: 1.2em;
+        color: rgb(255, 255, 255);
+    }
+    #quatrieme-colonne{
+        margin-left: 50px;
+    }
+    #quatrieme-colonne img{
+        cursor: pointer;
+    }
+
+    .footer{
+        height: 20px;
+        width: 99%;
+        background-color: rgba(66, 66, 66, 0.253);
+        position: absolute;
+        top: 1100px;
+
+    }
+    .marque-depose{
+        color: aliceblue;
+        margin-top: 2px;
+        margin-left: 5px;
+    }
+
+
+
+
+
+    @media(max-width: 1900px){
+
+
+
+        .footer{
+            height: 20px;
+            width: 99%;
+            background-color: rgba(66, 66, 66, 0.253);
+            position: absolute;
+            top: 1100px;
+            display: flex;
+        }
+
+        #quatrieme-colonne img{
+            margin-left: -200px;
+        }
+        .pied-de-page{
+            position: absolute;
+            top: 850px;
+            left: 13%;
+            width: fit-content;
+            height: 250px;
+            display: grid;
+            margin-left: 2%;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 200px;
+            grid-auto-rows: minmax(20px, 500px);
+    
+        }
+        .barre-separation{
+            margin-left: 5%;
+            background-color: aliceblue;
+            width: 90%;
+            height: 2px;
+            position: absolute;
+            top: 750px;
+        }
+    
+
+        @media(max-width: 1435px) {
+            .chapi, .alert-code-promo{
+                display: none;
+            }
+            .promotions-en-cours{
+                display: grid;
+                margin-left: 25%;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 10px;
+                    grid-auto-rows: minmax(10px, 450px);
+            }
+
+            .reduc-box{
+                margin-top: 50px;
+            }
+
+            #quatrieme-colonne img{
+                margin-left: -200px;
+            }
+            .pied-de-page{
+                position: absolute;
+                top: 1200px;
+            }
+            .footer{
+                position: absolute;
+                top: 1500px;
+            }
+            .barre-separation{
+                position: absolute;
+                top: 1100px;
+            }
+
+
+            @media(max-width: 1070px) {
+                .promotions-en-cours{
+                    display: grid;
+                    margin-left: 10%;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 10px;
+                        grid-auto-rows: minmax(10px, 450px);
+                }
+                #quatrieme-colonne img{
+                    margin-left: -200px;
+                }
+
+                .pied-de-page{
+                    position: absolute;
+                    top: 1200px;
+                    left: 8%;
+                    width: fit-content;
+                    height: 250px;
+                    display: grid;
+                    margin-left: 2%;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 200px;
+                    grid-auto-rows: minmax(20px, 500px);
+
+                        
+                    }
+                    .footer{
+                        position: absolute;
+                        top: 1500px;
+                    }
+                    @media(max-width: 1020px) {
+                        #quatrieme-colonne img{
+                            display: none;
+                        }
+                        .footer{
+                            position: absolute;
+                            top: 1500px;
+                        }
+
+                        .pied-de-page{
+                            position: absolute;
+                            left: 8%;
+                            top: 1200px;
+                            width: fit-content;
+                            height: 250px;
+                            display: grid;
+                            margin-left: 2%;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 200px;
+                            grid-auto-rows: minmax(20px, 500px);
+
+                    }
+                        @media(max-width: 875px) {
+                            .nav{
+                                position: relative;
+                                margin-left: -5px;
+                                display: grid;
+                                grid-template-columns: repeat(4, 1fr);
+                                gap: 50px;
+                                grid-auto-rows: minmax(10px, auto);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+} */

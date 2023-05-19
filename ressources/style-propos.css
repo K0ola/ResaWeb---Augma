@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Niagato';
+	src: url('fonts/Niagato.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'mangati';
+	src: url('fonts/mangati.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'CatCafe';
+	src: url('fonts/CatCafe.ttf') format('truetype')
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/* Police de texte : Italiana */
+/* font-family: 'Italiana', serif; */
+
+body {
+    margin: 0;
+    height: fit-content;
+    scroll-behavior: smooth;
+    background-color: rgb(64, 64, 64);
+  }
+  
+  header {
+    margin: 0;
+  }
+
+/* body{
+    height: 200vh;
+    scroll-behavior: smooth;
+    background-color: rgb(54, 54, 54);
+} */
+
+
+p, a, h2, h3{
+    font-family: 'CatCafe';
+}
+
+
+  
+article{
+    padding-top: 30px;
+    height: fit-content;
+}
+
+.nav-propos{
+    padding: 5px;
+    z-index: 1;
+    font-size: 2em;
+    position: fixed;
+    width: fit-content;
+    height: 100vh;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nav-propos p{
+    text-align: center;
+    color: aliceblue;
+}
+.nav-propos a{
+    text-align: center;
+    color: rgb(159, 159, 159);
+    text-decoration: none;
+}
+.bar-nav-sepa{
+    border-top: solid aliceblue;
+}
+#aide-nav{
+    border-top: solid rgba(112, 123, 133, 0);
+}
+
+.container{
+    scroll-behavior: smooth;
+    margin-left: 310px;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: rgb(64, 64, 64);
+}
+.v-slider-bloc{
+    margin-left: 10px;
+    color: aliceblue;
+    scroll-snap-align: start;
+    height: 100vh;
+    background-color: rgb(64, 64, 64);
+}
+#aide{
+    padding-top: 30px;
+    font-size: 1.2em;
+
+}
+#aide p{
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 70%;
+}
+#aide h1{
+    text-align: center;
+}
+
+
+
+
+  @media (max-width: 1032px){
+    .text-header p{
+        width: 100%;
+    }
+    .un,.deux{
+        position: absolute;
+        left: 80%;
+    }
+    @media (max-width:1007px) {
+        .navbar{
+            font-size: 2em
+        }
+    }
+  }

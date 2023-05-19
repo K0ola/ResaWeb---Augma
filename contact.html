@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ressources/contact.css">
+    <title>Contact | Augma</title>
+</head>
+<body>
+
+    <div class="nav-propos">
+        <div class="bar-nav-sepa" id="aide-nav"><p>Besoin d'aide</p></div>
+        <a href="propos.html#nous" alt="">Qui sommes nous</a>
+        <a href="propos.html#services" alt="">Nos services</a>
+        <a href="contact.html" alt="">Contactez-nous</a>
+        <div class="bar-nav-sepa"><p>Information légales</p></div>
+        <a href="propos.html#données" alt="">Données personnelles</a>
+        <a href="propos.html#vente" alt="">Conditions de vente</a>
+        <a href="#propos.htmlmentions-legales" alt="">Mentions légales</a>
+        <div class="bar-nav-sepa" id="autre-nav"><p>Autres</p></div>
+        <a href="index.html">Acceuil</a>
+        <a href="#">Boutique</a>
+        <a href="propos.html#top">A propos</a>
+        <a href="#">News</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="v-slider-bloc" id="contact-nous">
+        <h1>Contactez-nous</h1>
+        <form>
+            <label>Votre nom</label>
+            <input type="text" name="nom" required>
+            <label>Votre prenom</label>
+            <input type="text" name="prenom" required>
+            <label>Votre mail</label>
+            <input type="mail" name="mail" required>
+            <label>Votre message</label>
+            <textarea name="message" required></textarea>
+            <input type="submit" class="envoyer">
+    
+        </form>
+        <!-- <?php
+if (isset($_POST['message'])) {
+    $entete  = 'MIME-Version: 1.0' . "\r\n";
+    $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+    $entete .= 'From: AugmaSupport@augma.fr' . "\r\n";
+    $entete .= 'Reply-To: ' . $_POST['email'] . "\r\n";
+
+    $message = '<h1>Message envoyé depuis la page Contact Augma.fr</h1>';
+    $message .= '<p><b>Nom : </b>' . htmlspecialchars($_POST['nom']) . '<br>';
+    $message .= '<b>Prénom : </b>' . htmlspecialchars($_POST['prenom']) . '<br><br>';
+    $message .= '<b>Email : </b>' . $_POST['email'] . '<br><br>';
+    $message .= '<b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
+
+    $retour = mail('augmashop@gmail.com', 'Envoi depuis la page Contact', $message, $entete);
+}
+?> -->
+    
+</body>
+</html>
+

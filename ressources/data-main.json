@@ -1,0 +1,68 @@
+[
+    {
+        "id": "title",
+        "contenu": "Augma"
+    },
+
+    {
+        "title": "Bienvenue dans notre boutique en ligne spécialisée dans la vente de katana",
+        "contenu": "Nous sommes fiers de proposer une large sélection de katana de haute qualité à des prix compétitifs, fabriqués par des artisans expérimentés du Japon. Tous nos produits sont soigneusement sélectionnés pour leur qualité exceptionnelle et leur authenticité, et nous nous engageons à vous offrir un service clientèle de première classe. Nous sommes également fiers de proposer une livraison rapide et fiable dans le monde entier. Nous espérons que vous apprécierez notre sélection de katana et que vous trouverez l'épée parfaite pour vous ou pour offrir en cadeau. N'hésitez pas à nous contacter si vous avez des questions ou des demandes spécifiques, notre équipe sera ravie de vous aider."
+    },
+
+    {
+        "premiere_reduc": {
+            "name": "Ame no Habakiri",
+            "texte_presentation": "Ame no Habakiri est un Meito ayant appartenu à Kozuki Oden, qui l'utilisait avec un autre Meito, Enma.[2] Il fait partie des 21 Ô Wazamono[3] et a été forgé par Tenguyama Hitetsu qui la considère comme son chef-d'œuvre.[3] Son actuel propriétaire étant le fils d'Oden, Kozuki Momonosuke.",
+            "img": "",
+            "link": "",
+            "price": "160",
+            "price_after_reduc": "120",
+            "description": {
+                "Caracteristique_1": "",
+                "Caracteristique_2": "",
+                "Caracteristique_3": "",
+                "Caracteristique_4": "",
+                "Caracteristique_5": "",
+                "Caracteristique_6": ""
+            }
+        }
+    },
+
+    {
+        "deuxieme_reduc": {
+            "name": "Ame no Habakiri",
+            "texte_presentation": "Ame no Habakiri est un Meito ayant appartenu à Kozuki Oden, qui l'utilisait avec un autre Meito, Enma.[2] Il fait partie des 21 Ô Wazamono[3] et a été forgé par Tenguyama Hitetsu qui la considère comme son chef-d'œuvre.[3] Son actuel propriétaire étant le fils d'Oden, Kozuki Momonosuke.",
+            "img": "",
+            "link": "",
+            "price": "160",
+            "price_after_reduc": "120",
+            "description": {
+                "Caracteristique_1": "",
+                "Caracteristique_2": "",
+                "Caracteristique_3": "",
+                "Caracteristique_4": "",
+                "Caracteristique_5": "",
+                "Caracteristique_6": ""
+            }
+        }
+    },
+
+    {
+        "troisieme_reduc": {
+            "name": "Ame no Habakiri",
+            "texte_presentation": "Ame no Habakiri est un Meito ayant appartenu à Kozuki Oden, qui l'utilisait avec un autre Meito, Enma.[2] Il fait partie des 21 Ô Wazamono[3] et a été forgé par Tenguyama Hitetsu qui la considère comme son chef-d'œuvre.[3] Son actuel propriétaire étant le fils d'Oden, Kozuki Momonosuke.",
+            "img": "",
+            "link": "",
+            "price": "160",
+            "price_after_reduc": "120",
+            "description": {
+                "Caracteristique_1": "",
+                "Caracteristique_2": "",
+                "Caracteristique_3": "",
+                "Caracteristique_4": "",
+                "Caracteristique_5": "",
+                "Caracteristique_6": ""
+            }
+        }
+    }
+]
